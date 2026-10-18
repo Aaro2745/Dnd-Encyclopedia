@@ -1,70 +1,98 @@
 # 🐉 D&D Encyclopedia
 
-Welcome to the **D&D Encyclopedia**! This project aims to create a collection of information about *Dungeons & Dragons*, organized into one place for players to explore and learn about the game.
+A Python-based Dungeons & Dragons encyclopedia that lets users look up information about monsters, spells, classes, races, items, and backgrounds using the D&D 5e API.
 
-## 📖 About the Project
+## 📖 About
 
-The D&D Encyclopedia is a personal programming project focused on organizing useful Dungeons & Dragons information in an accessible format.
+The D&D Encyclopedia is a personal programming project designed to make looking up D&D information easier through a simple, menu-driven interface.
 
-The goal is to build a resource where players can look up information about the world of D&D, including characters, creatures, classes, spells, and other elements of the game.
+The project uses Python to interact with the D&D 5e API and retrieve information based on the category and name selected by the user.
 
-This project is also an opportunity to improve my programming skills and learn how to build a larger application over time.
+This is an ongoing project that will grow as I develop my Python skills and add new features.
 
 ## ✨ Features
 
-Planned features include:
+- **Category Selection:** Choose from six categories:
+  - Monsters
+  - Spells
+  - Classes
+  - Races
+  - Items
+  - Backgrounds
+- **Name-Based Lookups:** Enter the name of an entry to search for it.
+- **API Integration:** Uses the D&D 5e API to request information.
+- **Input Validation:** Prompts users again when they select an invalid category.
 
-- 📚 **Encyclopedia Entries** — Organized information about D&D topics.
-- 🧙 **Character Classes** — Information about different character classes.
-- 🐲 **Creatures & Monsters** — Entries about creatures found in D&D.
-- ✨ **Spells** — A collection of spells and their information.
-- 🗺️ **Locations & Lore** — Information about places and the lore of D&D.
-- 🔍 **Search** — Find specific entries quickly.
+## 🛠️ Built With
 
-*Features may change as development progresses.*
-
-## 🛠️ Technologies
-
-- **Programming Language:** [Add your language here]
-- **Development Environment:** [Add your IDE or editor here]
-- **Version Control:** Git and GitHub
+- [Python](https://www.python.org/) — Main programming language.
+- [Requests](https://requests.readthedocs.io/) — Sends HTTP requests to the API.
+- [D&D 5e API](https://www.dnd5eapi.co/) — Provides D&D game data.
+- [GitHub](https://github.com/) — Source control and project hosting.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Access to a compatible development environment.
-- Any required compiler, interpreter, or dependencies.
+- Python 3
+- An internet connection
+- The `requests` library
 
-### Running the Project
+### Installation
 
-1. Clone or download this repository.
-2. Open the project in your development environment.
-3. Follow the setup instructions for the language and tools being used.
-4. Run the application.
+1. Clone the repository:
 
-*Detailed setup instructions will be added as the project develops.*
+   ```bash
+   git clone https://github.com/Aaro2745/Dnd-Encyclopedia.git
+   ```
 
-## 📅 Development Roadmap
+2. Navigate to the project directory:
 
-- [ ] Establish the basic project structure.
-- [ ] Add the first encyclopedia entries.
-- [ ] Organize entries into categories.
-- [ ] Implement a search system.
-- [ ] Expand the encyclopedia with additional D&D content.
-- [ ] Improve usability and documentation.
+   ```bash
+   cd Dnd-Encyclopedia
+   ```
 
-## 🎯 Project Goals
+3. Install the required dependency:
 
-- Improve my programming and problem-solving skills.
-- Practice organizing and managing larger projects.
-- Build something useful for D&D players.
-- Gradually add more advanced features as I learn.
+   ```bash
+   python -m pip install requests
+   ```
+
+### Running the Program
+
+Run the following command from the project directory:
+
+```bash
+python Dnddict.py
+```
+
+Depending on your system, you may need to use `python3` instead of `python`.
+
+## 🗺️ Roadmap
+
+- [x] Create a category selection menu.
+- [x] Connect to the D&D 5e API.
+- [x] Accept entry names from the user.
+- [ ] Display the retrieved information in a readable format.
+- [ ] Handle entries that cannot be found.
+- [ ] Improve input validation and error handling.
+- [ ] Add more features as development continues.
+
+## 🎯 Goals
+
+- Build a useful D&D reference tool.
+- Improve my Python programming skills.
+- Learn more about APIs and HTTP requests.
+- Practice writing readable, maintainable code.
+- Expand the project over time.
 
 ## ⚖️ Disclaimer
 
-Dungeons & Dragons and its associated intellectual property belong to their respective owners. This is an unofficial fan project and is not affiliated with or endorsed by Wizards of the Coast.
+Dungeons & Dragons is a trademark of Wizards of the Coast LLC. This project is an unofficial fan-made project and is not affiliated with, endorsed, or sponsored by Wizards of the Coast.
+
+D&D data is retrieved from the [D&D 5e API](https://www.dnd5eapi.co/). Refer to the API's documentation and applicable content licenses for more information.
 
 ## 📜 License
 
-A license will be added once the project's licensing terms have been decided.
+No license has been specified yet. Please check this repository for licensing information before reusing or distributing its code.
+
