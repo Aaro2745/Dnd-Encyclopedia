@@ -1,4 +1,5 @@
 import requests
+import time
 def format(category,name):
     formatted_name=name.lower().replace(" ","-")
     return formatted_name
@@ -49,12 +50,18 @@ print(f"You have selected {category}")
 print("Please enter the name of the item you would like to search for:")
 name=input()
 formatted_name=format(category,name)
+print("Please Wait,Searching")
+time.sleep(4)
 
 response=requests.get(f"https://www.dnd5eapi.co/api/{category}/{formatted_name}")
 if response.status_code==200:
-    print("test passed")
-    
-      
+    print("Item Found!!!!!!!!!!!!!!!!!!!!!!!!")
+    time.sleep(3)
+    data=response.json()
+    print(f"Name: {data['name']}")
+    print(f" Hit Points: {data['hit_points']}")
+else:
+    print("Item not found.")
 
 
 
